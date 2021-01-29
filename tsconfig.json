@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "include": [
+    "src/**/*.ts",
+    "node_modules/ngx-lorem-ipsum/**/*.ts"
+    ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@ngx-lorem-ipsum/": [ "./node_modules/ngx-lorem-ipsum/lib/" ],
+    },
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
